@@ -1,72 +1,458 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Corporate Training & Coaching — Deepesh Kumar</title><meta name="description" content="Developing people. Strengthening performance.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&display=swap" rel="stylesheet">
-<link rel="icon" href="assets/eagle.png"><link rel="stylesheet" href="style.css"></head>
-<body><svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-<symbol id="i-people" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3"/><circle cx="5" cy="10" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M6.5 20v-2.5a5.5 5.5 0 0 1 11 0V20M1.5 18v-1.5a3.3 3.3 0 0 1 3.5-3M22.5 18v-1.5a3.3 3.3 0 0 0-3.5-3"/></symbol>
-<symbol id="i-bars" viewBox="0 0 24 24"><path d="M4 20V13M10 20V8M16 20V11M22 20V4M2 20h21"/></symbol>
-<symbol id="i-heart-head" viewBox="0 0 24 24"><path d="M8 21v-3c-2.5-1.5-4-4-4-7a8 8 0 1 1 16 0c0 1.5-.4 2.600-1 3.700L19 17l-2 .5V21z"/><path d="M12 14.500s-3-1.800-3-4a1.700 1.700 0 0 1 3-1 1.700 1.700 0 0 1 3 1c0 2.200-3 4-3 4z"/></symbol>
-<symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.600 7.100L3 21l1.900-5.400A8 8 0 1 1 21 12z"/><path d="M8.500 11h7M8.500 14h4"/></symbol>
-<symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.200"/><path d="M12 3V1M21 12h2"/></symbol>
-<symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.700 0l3-3a4 4 0 0 0-5.700-5.700l-1 1"/><path d="M14 10a4 4 0 0 0-5.700 0l-3 3a4 4 0 0 0 5.700 5.700l1-1"/></symbol>
-<symbol id="i-car" viewBox="0 0 24 24"><path d="M3 16v-4l2-5.200A2 2 0 0 1 6.900 5.500h10.200A2 2 0 0 1 19 6.800L21 12v4a1 1 0 0 1-1 1h-1.500M3 16a1 1 0 0 0 1 1h1.500M3 12h18"/><circle cx="7.500" cy="17" r="2"/><circle cx="16.500" cy="17" r="2"/><path d="M9.500 17h5"/></symbol>
-<symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.200"/><path d="M12 2.500l1.300 2.500 2.800-.6.800 2.700 2.700.8-.6 2.800L21.500 12l-2.500 1.300.6 2.800-2.700.8-.8 2.700-2.800-.6L12 21.500l-1.300-2.500-2.800.6-.8-2.700-2.700-.8.6-2.800L2.500 12 5 10.700l-.6-2.800 2.700-.8.8-2.700 2.800.6z"/></symbol>
-<symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></symbol>
-<symbol id="i-clip" viewBox="0 0 24 24"><rect x="5" y="3.500" width="14" height="18" rx="2"/><path d="M9 3.500h6v3H9zM8.500 11h7M8.500 14.500h7M8.500 18h4"/></symbol>
-<symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.500 14L7 22l5-3 5 3-1.500-8"/><path d="M12 6l1 2 2 .3-1.500 1.400.4 2L12 10.700 10.100 11.700l.4-2L9 8.300l2-.3z"/></symbol>
-<symbol id="i-gate" viewBox="0 0 24 24"><path d="M2 5.500c4 1.500 16 1.500 20 0M4 8.500h16M6 8.500V21M18 8.500V21M3.500 12.500h17"/></symbol>
-<symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.500" y="5" width="19" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
-<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.500 1.500a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
-<symbol id="i-in" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.500V16M8 7.700v.1M12 16v-5.500M12 13c0-1.500 1-2.500 2.300-2.500S16.500 11.500 16.500 13v3"/></symbol>
-<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11.500A7 7 0 0 0 5 9.500C5 15 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></symbol>
-<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
-<symbol id="i-tick" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.500l3 3 5-6"/></symbol>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Corporate Training & Executive Coaching — Deepesh Kumar</title>
+  <meta name="description" content="Experiential corporate training, leadership capability development, and confidential 1-on-1 executive coaching by Deepesh Kumar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/eagle.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-people" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3"/><circle cx="5" cy="10" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M6.5 20v-2.5a5.5 5.5 0 0 1 11 0V20M1.5 18v-1.5a3.3 3.3 0 0 1 3.5-3M22.5 18v-1.5a3.3 3.3 0 0 0-3.5-3"/></symbol>
+  <symbol id="i-bars" viewBox="0 0 24 24"><path d="M4 20V13M10 20V8M16 20V11M22 20V4M2 20h21"/></symbol>
+  <symbol id="i-heart-head" viewBox="0 0 24 24"><path d="M8 21v-3c-2.5-1.5-4-4-4-7a8 8 0 1 1 16 0c0 1.5-.4 2.600-1 3.700L19 17l-2 .5V21z"/><path d="M12 14.500s-3-1.800-3-4a1.700 1.700 0 0 1 3-1 1.700 1.700 0 0 1 3 1c0 2.200-3 4-3 4z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.600 7.100L3 21l1.900-5.400A8 8 0 1 1 21 12z"/><path d="M8.500 11h7M8.500 14h4"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.200"/><path d="M12 3V1M21 12h2"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.700 0l3-3a4 4 0 0 0-5.700-5.700l-1 1"/><path d="M14 10a4 4 0 0 0-5.700 0l-3 3a4 4 0 0 0 5.700 5.700l1-1"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></symbol>
+  <symbol id="i-clip" viewBox="0 0 24 24"><rect x="5" y="3.500" width="14" height="18" rx="2"/><path d="M9 3.500h6v3H9zM8.500 11h7M8.500 14.500h7M8.500 18h4"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.500 14L7 22l5-3 5 3-1.500-8"/><path d="M12 6l1 2 2 .3-1.500 1.400.4 2L12 10.700 10.100 11.700l.4-2L9 8.300l2-.3z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+  <symbol id="i-tick" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.500l3 3 5-6"/></symbol>
 </defs></svg>
-<header class="site-header"><div class="wrap nav">
-<a class="brand" href="index.html"><img src="assets/eagle.png" alt="Deepesh Kumar eagle logo"><span><b>DEEPESH KUMAR</b><small>The Transformation Coach</small></span></a>
-<input type="checkbox" id="nav-toggle" aria-label="Toggle menu"><label for="nav-toggle" class="burger" aria-label="Menu"><span></span></label>
-<nav class="menu"><a href="index.html">Home</a><a href="about.html">About Me</a><a href="corporate-training.html" class="active">Corporate Training &amp; Coaching</a><a href="automobile-training.html">Automobile Training</a><a href="connect.html">Connect</a><a class="nav-cta" href="connect.html">Let's Connect</a></nav></div></header>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <img src="assets/eagle.png" alt="Deepesh Kumar eagle logo">
+      <span><b>DEEPESH KUMAR</b><small>The Transformation Coach</small></span>
+    </a>
+    <input type="checkbox" id="nav-toggle" aria-label="Toggle menu">
+    <label for="nav-toggle" class="burger" aria-label="Menu"><span></span></label>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="corporate-training.html" class="active">Corporate Training &amp; Coaching</a>
+      <a href="automobile-training.html">Automobile Training</a>
+      <a href="connect.html">Connect</a>
+      <a class="nav-cta" href="connect.html">Let's Connect</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-<section class="hero hero-sm"><img class="hero-eagle" src="assets/eagle.png" alt="">
-<div class="wrap hero-grid">
-<div class="hero-copy"><div class="eyebrow">Corporate Training &amp; Coaching</div>
-<h1>Developing People. <em>Strengthening Performance.</em></h1>
-<p>Helping professionals build the capabilities to communicate effectively, lead confidently and perform at their best.</p>
-<div class="btn-row"><a class="btn btn-gold" href="connect.html">Discuss Your Training Needs <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div></div>
-<div class="hero-img"><div class="media"><img src="assets/trainer.jpg" alt="Corporate training session"></div></div>
-</div></section>
+  <!-- Hero Section -->
+  <section class="hero hero-sm">
+    <img class="hero-eagle" src="assets/eagle.png" alt="" aria-hidden="true">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">Corporate Training &amp; Executive Coaching</div>
+        <h1>Developing People. <em>Strengthening Performance.</em></h1>
+        <p>Empowering corporate leaders, emerging managers, and cross-functional teams with experiential capability building, emotional intelligence, and confidential 1-on-1 strategic coaching.</p>
+        <div class="btn-row">
+          <a class="btn btn-gold" href="connect.html">Discuss Your Training Needs <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-outline" href="#signature-programs">Explore Programs</a>
+        </div>
+        <div class="hero-pills">
+          <span class="hero-pill"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg> 15+ Years Industry Leadership</span>
+          <span class="hero-pill"><svg class="icon" aria-hidden="true"><use href="#i-people"/></svg> 500+ Workshops Delivered</span>
+          <span class="hero-pill"><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg> 10,000+ Professionals Coached</span>
+          <span class="hero-pill"><svg class="icon" aria-hidden="true"><use href="#i-tick"/></svg> Pan-India &amp; Hybrid Formats</span>
+        </div>
+      </div>
+      <div class="hero-img">
+        <div class="media tall">
+          <img src="assets/corporate-workshop.jpg" alt="Deepesh Kumar conducting an executive corporate leadership workshop">
+          <div class="media-caption-card">
+            <b>Executive Leadership Lab</b>
+            <small>Experiential • Real-World Case Studies • High Engagement</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section><div class="wrap split">
-<div><div class="eyebrow" style="margin-bottom:14px">Corporate Training</div><h2>Practical, engaging and customised <em>learning experiences</em></h2>
-<p>Technical skills get people hired; behavioural skills determine how far they go. My corporate programmes develop the human capabilities that drive stronger performance and healthier workplaces.</p>
-<p>Every programme is shaped around your audience — from new managers to senior leaders — using real situations, discussion, activities and reflection rather than slide-heavy lectures.</p>
-<ul class="tick-list" style="margin:16px 0 26px"><li><svg class="icon" aria-hidden="true"><use href="#i-tick"/></svg>Workshops and interactive group sessions</li><li><svg class="icon" aria-hidden="true"><use href="#i-tick"/></svg>Customised soft-skill programmes</li><li style="border:0"><svg class="icon" aria-hidden="true"><use href="#i-tick"/></svg>Faculty and trainer development</li></ul>
-<a class="btn btn-gold" href="connect.html">Discuss Your Training Requirements <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
-<div class="media tall"><img src="assets/deepesh.jpg" alt="Deepesh Kumar" style="object-position:center top"></div></div></section>
+  <!-- Impact Ribbon -->
+  <section class="impact-strip">
+    <div class="wrap">
+      <div class="impact-grid">
+        <div class="impact-item">
+          <b>96%</b>
+          <span>Participant Application &amp; Retention Rate</span>
+        </div>
+        <div class="impact-item">
+          <b>500+</b>
+          <span>Interactive Corporate Workshops Hosted</span>
+        </div>
+        <div class="impact-item">
+          <b>10,000+</b>
+          <span>Executives &amp; Team Members Transformed</span>
+        </div>
+        <div class="impact-item">
+          <b>100%</b>
+          <span>Tailored to Your Organizational Culture</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="light-sec"><div class="wrap"><div class="sec-head"><div class="eyebrow">Key Focus Areas</div><h2>Capabilities That <em>Make the Difference</em></h2></div>
-<div class="grid g3"><div class="card"><div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-bars"/></svg></div><h3>Leadership &amp; People Development</h3><p>Leading with clarity, accountability and empathy.</p><ul class="mini"><li>Leadership styles &amp; self-awareness</li><li>Team building and motivation</li><li>Feedback, delegation and decision-making</li></ul></div><div class="card"><div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-heart-head"/></svg></div><h3>Emotional Intelligence</h3><p>Understanding emotions to improve relationships and results.</p><ul class="mini"><li>Self-awareness &amp; self-regulation</li><li>Empathy and social awareness</li><li>Handling pressure and conflict</li></ul></div><div class="card"><div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></div><h3>Communication &amp; Interpersonal Skills</h3><p>Saying what you mean — and being understood.</p><ul class="mini"><li>Clear, confident speaking</li><li>Active listening</li><li>Professional presence &amp; presentation</li></ul></div><div class="card"><div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg></div><h3>Mindset &amp; Personal Effectiveness</h3><p>Turning intention into consistent action.</p><ul class="mini"><li>Growth mindset and motivation</li><li>Purpose, priorities and goals</li><li>Stress and time management</li></ul></div><div class="card"><div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg></div><h3>Influence &amp; Relationship Building</h3><p>Earning trust and credibility beyond formal authority.</p><ul class="mini"><li>Influence without authority</li><li>Networking and stakeholder relationships</li><li>Building long-term trust</li></ul></div></div></div></section>
+  <!-- Corporate Training Philosophy Split -->
+  <section>
+    <div class="wrap split">
+      <div>
+        <div class="eyebrow" style="margin-bottom:14px">Experiential Corporate Training</div>
+        <h2>Workplace dynamics demand more than <em>technical prowess</em></h2>
+        <p>Technical expertise and functional skill get talented people hired; emotional intelligence, self-leadership, and interpersonal influence determine how high they rise and how cohesively teams deliver results.</p>
+        <p>Deepesh Kumar crafts bespoke capability journeys shaped specifically around your organizational goals. Moving far beyond generic slide lectures, every cohort engages in lively behavioural simulations, psychological safety exercises, and peer feedback circles.</p>
+        <ul class="tick-list" style="margin:20px 0 28px">
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#i-tick"/></svg>
+            <div><b>Interactive Behavioural Labs:</b> Hands-on simulations, role reversals, and real workplace case studies.</div>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#i-tick"/></svg>
+            <div><b>Competency-Mapped Content:</b> Aligned directly to your company's core values, OKRs, and leadership matrix.</div>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#i-tick"/></svg>
+            <div><b>Sustainable Habit Loops:</b> 30-day implementation blueprints, reflection pods, and accountability sprints.</div>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#i-tick"/></svg>
+            <div><b>Internal Capability Multiplication:</b> Upskilling managers and internal mentors to sustain learning long after the workshop.</div>
+          </li>
+        </ul>
+        <a class="btn btn-gold" href="connect.html">Schedule a Training Discovery Call <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="media tall">
+        <img src="assets/deepesh.jpg" alt="Deepesh Kumar — Transformation Coach" style="object-position:center top">
+        <div class="media-caption-card">
+          <b>Deepesh Kumar</b>
+          <small>Certified Coach &amp; Corporate Facilitator • 15+ Yrs Industry Track Record</small>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section><div class="wrap split rev">
-<div class="media wide" style="background:#f3f4f6;display:grid;place-items:center;aspect-ratio:4/3"><img src="assets/deepesh.jpg" alt="Deepesh Kumar" style="object-position:center 20%"></div>
-<div><div class="eyebrow" style="margin-bottom:14px">Coaching</div><h2>A supportive journey to <em>clarity, confidence and purpose</em></h2>
-<p>Coaching is a one-to-one space to think clearly, challenge limiting beliefs and move forward with intention. Drawing on emotional intelligence and Ikigai-based coaching, we work on what matters most to you.</p>
-<ul class="checks" style="grid-template-columns:1fr;margin:14px 0 26px"><li><svg class="icon" aria-hidden="true"><use href="#i-tick"/></svg>Personal transformation</li><li><svg class="icon" aria-hidden="true"><use href="#i-tick"/></svg>Leadership coaching</li><li><svg class="icon" aria-hidden="true"><use href="#i-tick"/></svg>Communication &amp; confidence</li><li><svg class="icon" aria-hidden="true"><use href="#i-tick"/></svg>Mindset &amp; purpose</li><li><svg class="icon" aria-hidden="true"><use href="#i-tick"/></svg>Ikigai exploration</li></ul>
-<a class="btn btn-gold" href="connect.html">Start a Coaching Conversation <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div></div></section>
+  <!-- Signature Capability Tracks (6 Cards in Balanced Grid) -->
+  <section class="light-sec" id="signature-programs">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Signature Corporate Modules</div>
+        <h2>Core Capabilities That <em>Drive Business Results</em></h2>
+        <p style="max-width:760px;margin:12px auto 0;color:var(--muted);font-size:1.02rem">Comprehensive, customizable training tracks designed to bridge competency gaps and unleash leadership potential across all organizational tiers.</p>
+      </div>
 
-<section class="dark"><div class="wrap"><div class="sec-head center"><div class="eyebrow" style="color:var(--gold-2)">How I Work</div><h2>My <em>5-Step Approach</em></h2></div><div class="steps"><div class="step"><h3>Understand</h3><p>Listening first — to your goals, your context and the challenges you face.</p></div><div class="step"><h3>Experience</h3><p>Interactive, experience-based learning that makes ideas real, not theoretical.</p></div><div class="step"><h3>Reflect</h3><p>Space for awareness — seeing your own patterns, strengths and blind spots.</p></div><div class="step"><h3>Apply</h3><p>Practical tools and exercises you can use at work from the very next day.</p></div><div class="step"><h3>Transform</h3><p>Small, consistent changes in behaviour that grow into lasting results.</p></div></div></div></section>
-<section class="tagline"><div class="wrap"><p><span>Practical learning.</span><span>Meaningful change.</span><span>Lasting impact.</span></p></div></section>
-<section class="cta-band"><div class="wrap in"><h2>Planning a corporate <em>training programme?</em></h2><a class="btn btn-navy" href="connect.html">Discuss Your Training Needs <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div></section>
+      <div class="grid g3">
+        <!-- Card 1 -->
+        <div class="card">
+          <span class="prog-tag">Leadership Evolution</span>
+          <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-bars"/></svg></div>
+          <h3>Managerial Excellence &amp; First-Time Managers</h3>
+          <p>Navigating the vital transition from star individual contributor to trusted people manager who inspires accountability.</p>
+          <ul class="mini">
+            <li>Effective delegation without micromanagement</li>
+            <li>Conducting constructive, non-defensive feedback</li>
+            <li>Motivating diverse teams &amp; managing performance</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <span class="prog-tag">Self &amp; Social Mastery</span>
+          <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-heart-head"/></svg></div>
+          <h3>Emotional Intelligence &amp; Stress Resilience</h3>
+          <p>Understanding emotions, mastering self-regulation, and staying composed under high-stakes corporate pressure.</p>
+          <ul class="mini">
+            <li>Identifying stress triggers &amp; emotional regulation</li>
+            <li>Active empathy in cross-generational teams</li>
+            <li>De-escalating workplace tension and preventing burnout</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <span class="prog-tag">Executive Presence</span>
+          <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></div>
+          <h3>High-Stakes Business Communication &amp; Gravitas</h3>
+          <p>Articulating ideas with clarity, brevity, and persuasive conviction for C-suite and high-value client engagements.</p>
+          <ul class="mini">
+            <li>Boardroom presentation storytelling &amp; structuring</li>
+            <li>Body language, vocal projection, and poise</li>
+            <li>Handling difficult Q&amp;A sessions with composure</li>
+          </ul>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <span class="prog-tag">Team Culture</span>
+          <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-people"/></svg></div>
+          <h3>High-Performance Team Synergy &amp; Trust</h3>
+          <p>Dismantling organizational silos, fostering psychological safety, and aligning disparate units toward unified targets.</p>
+          <ul class="mini">
+            <li>Overcoming the 5 dysfunctions of a team</li>
+            <li>Transforming interpersonal friction into synergy</li>
+            <li>Fostering cross-departmental collaboration</li>
+          </ul>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+          <span class="prog-tag">Adaptive Mindset</span>
+          <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg></div>
+          <h3>Strategic Agility &amp; Growth Mindset in Disruption</h3>
+          <p>Cultivating resilience, cognitive adaptability, and proactive problem-solving amidst organizational change.</p>
+          <ul class="mini">
+            <li>Shifting from defensive fixed mindsets to growth</li>
+            <li>Root-cause scenario analysis and lateral thinking</li>
+            <li>Leading teams through organizational restructuring</li>
+          </ul>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+          <span class="prog-tag">Capability Multiplication</span>
+          <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg></div>
+          <h3>Train-the-Trainer &amp; Internal Mentorship</h3>
+          <p>Equipping senior leaders, technical specialists, and internal instructors with impactful facilitation and mentoring skills.</p>
+          <ul class="mini">
+            <li>Adult learning methodologies &amp; experiential design</li>
+            <li>Facilitating lively virtual and in-person cohorts</li>
+            <li>Mentoring frameworks that accelerate employee retention</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1-on-1 Executive Coaching Deep Dive -->
+  <section>
+    <div class="wrap split rev">
+      <div class="media tall">
+        <img src="assets/executive-coaching.jpg" alt="Deepesh Kumar conducting a 1-on-1 executive coaching session" style="object-position:center top">
+        <div class="media-caption-card">
+          <b>1-on-1 Executive Coaching</b>
+          <small>Confidential • Purpose-Driven • Tailored for C-Suite &amp; Senior Leaders</small>
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow" style="margin-bottom:14px">Executive Coaching</div>
+        <h2>A confidential sanctuary for <em>clarity, purpose &amp; breakthrough</em></h2>
+        <p>Leadership at senior levels can be an isolating experience. Executive coaching offers C-suite leaders, directors, and emerging high-potentials a confidential, non-judgmental space to think aloud, challenge ingrained assumptions, and navigate complex organizational politics.</p>
+        <p>Grounded in emotional intelligence and Ikigai coaching methodologies, Deepesh Kumar partners with leaders through a structured 4-pillar architectural journey:</p>
+
+        <div class="grid g2" style="gap:16px;margin:22px 0 28px">
+          <div class="pillar-card">
+            <div class="pillar-num">01</div>
+            <h4>Diagnostic &amp; 360° Awareness</h4>
+            <p>Uncovering blind spots, leadership derailers, and stakeholder feedback patterns.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-num">02</div>
+            <h4>Ikigai &amp; Value Alignment</h4>
+            <p>Harmonizing professional ambition with authentic purpose and intrinsic strengths.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-num">03</div>
+            <h4>Cognitive Reframing</h4>
+            <p>Overcoming imposter feelings, decision paralysis, and self-limiting cognitive loops.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-num">04</div>
+            <h4>Execution &amp; Accountability</h4>
+            <p>Bi-weekly sprints with clear behavioral milestones and measurable business ROI.</p>
+          </div>
+        </div>
+
+        <a class="btn btn-gold" href="connect.html">Inquire About Executive Coaching <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flexible Delivery Formats -->
+  <section class="light-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Engagement Delivery Models</div>
+        <h2>Designed to Fit Your <em>Operational Rhythm</em></h2>
+        <p style="max-width:720px;margin:12px auto 0;color:var(--muted);font-size:1.02rem">Flexible formats crafted to integrate smoothly into busy corporate calendars with zero operational friction.</p>
+      </div>
+
+      <div class="grid g4">
+        <!-- Format 1 -->
+        <div class="format-card">
+          <span class="badge-meta">Onsite Immersive</span>
+          <h3>1 to 3-Day Bootcamps</h3>
+          <p>High-energy, hands-on offsite retreats or in-house workshops with interactive role simulations and physical team dynamics.</p>
+          <ul>
+            <li>Ideal for leadership offsites</li>
+            <li>Immediate team bonding</li>
+            <li>Deep experiential retention</li>
+          </ul>
+        </div>
+
+        <!-- Format 2 -->
+        <div class="format-card">
+          <span class="badge-meta">Virtual Cohorts</span>
+          <h3>Interactive Sprints</h3>
+          <p>Bite-sized, high-engagement virtual modules delivered across 4 to 8 weeks with digital breakout rooms and peer assignments.</p>
+          <ul>
+            <li>Zero travel overhead</li>
+            <li>Scalable across pan-India offices</li>
+            <li>Micro-learning between sessions</li>
+          </ul>
+        </div>
+
+        <!-- Format 3 -->
+        <div class="format-card">
+          <span class="badge-meta">1-on-1 Confidential</span>
+          <h3>Executive Sprints</h3>
+          <p>Structured 3 to 6-month confidential coaching engagements for CxOs, VPs, and directors with bi-weekly sessions and on-demand advisory.</p>
+          <ul>
+            <li>Personalized 360° diagnostics</li>
+            <li>Total confidentiality</li>
+            <li>Measurable behavioural ROI</li>
+          </ul>
+        </div>
+
+        <!-- Format 4 -->
+        <div class="format-card">
+          <span class="badge-meta">Keynotes &amp; Summits</span>
+          <h3>Keynote Addresses</h3>
+          <p>Inspiring, high-impact keynote sessions for corporate annual kick-offs, leadership conferences, and townhall summits.</p>
+          <ul>
+            <li>High-energy inspiration</li>
+            <li>Cultural tone-setting</li>
+            <li>Memorable strategic takeaways</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5-Step Methodology -->
+  <section class="dark">
+    <div class="wrap">
+      <div class="sec-head center">
+        <div class="eyebrow" style="color:var(--gold-2)">Methodology &amp; Architecture</div>
+        <h2>The <em>5-Step Transformation Framework</em></h2>
+        <p style="max-width:680px;margin:12px auto 0;color:var(--muted)">A structured, experiential pathway ensuring that every insight converts into lasting workplace behaviour.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>Understand</h3>
+          <p>Deep diagnostic listening — uncovering organizational context, team pain points, and target KPIs.</p>
+        </div>
+        <div class="step">
+          <h3>Experience</h3>
+          <p>Interactive experiential labs that bring principles to life through simulations and case studies.</p>
+        </div>
+        <div class="step">
+          <h3>Reflect</h3>
+          <p>Cultivating self-awareness — illuminating ingrained habits, blind spots, and natural strengths.</p>
+        </div>
+        <div class="step">
+          <h3>Apply</h3>
+          <p>Actionable toolkits and daily practice routines ready for immediate execution the following morning.</p>
+        </div>
+        <div class="step">
+          <h3>Transform</h3>
+          <p>Small, compound behavioral shifts supported by accountability check-ins that cement sustained growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corporate L&D FAQ Section -->
+  <section class="light-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Enterprise Inquiries</div>
+        <h2>Frequently Asked <em>Corporate Questions</em></h2>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-card">
+          <h4><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg> How do you customize programs for our specific industry culture?</h4>
+          <p>Every engagement begins with a comprehensive discovery phase where we interview stakeholders, review internal competency benchmarks, and craft custom case studies reflecting your team's real challenges.</p>
+        </div>
+        <div class="faq-card">
+          <h4><svg class="icon" aria-hidden="true"><use href="#i-people"/></svg> What is the optimal cohort size for your workshops?</h4>
+          <p>For deep behavioural workshops, 15 to 25 participants ensures maximum psychological safety and active peer engagement. For strategic keynotes and town halls, audiences can scale to several hundreds.</p>
+        </div>
+        <div class="faq-card">
+          <h4><svg class="icon" aria-hidden="true"><use href="#i-bars"/></svg> How is training ROI and behavioural shift measured?</h4>
+          <p>We incorporate pre- and post-workshop pulse surveys, 30-day implementation check-ins, and manager feedback audits to verify tangible behavioral adoption on the job.</p>
+        </div>
+        <div class="faq-card">
+          <h4><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg> Do you offer pan-India and hybrid delivery options?</h4>
+          <p>Yes. Deepesh conducts in-person workshops across all major enterprise hubs in India (Bengaluru, Chennai, Mumbai, Delhi-NCR, Hyderabad, Pune) as well as virtual cohorts for globally distributed teams.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tagline Band -->
+  <section class="tagline">
+    <div class="wrap">
+      <p>
+        <span>Practical learning.</span>
+        <span>Meaningful change.</span>
+        <span>Lasting impact.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA Band -->
+  <section class="cta-band">
+    <div class="wrap in">
+      <h2>Planning a corporate <em>training or coaching initiative?</em></h2>
+      <a class="btn btn-navy" href="connect.html">Schedule a Discovery Session <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </section>
 </main>
-<footer class="site-footer"><div class="wrap">
-<div class="foot">
-<div><a class="brand" href="index.html"><img src="assets/eagle.png" alt=""><span><b>DEEPESH KUMAR</b><small>The Transformation Coach</small></span></a>
-<p>Leadership &amp; Capability Development</p><p class="tag">Transform Within. Rise Beyond.</p></div>
-<div><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Me</a></li><li><a href="corporate-training.html">Corporate Training &amp; Coaching</a></li><li><a href="automobile-training.html">Automobile Training</a></li><li><a href="connect.html">Connect</a></li></ul></div>
-<div><h4>Get in touch</h4><ul>
-<li><a href="mailto:professional-email@example.com">professional-email@example.com</a></li><li><a href="tel:+919380214777">+91 93802 14777</a></li><li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li></ul></div>
-</div><p class="copy">© 2026 Deepesh Kumar — The Transformation Coach. Website draft for client review.</p></div></footer>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html">
+          <img src="assets/eagle.png" alt="Deepesh Kumar eagle logo">
+          <span><b>DEEPESH KUMAR</b><small>The Transformation Coach</small></span>
+        </a>
+        <p>Leadership &amp; Capability Development</p>
+        <p class="tag">Transform Within. Rise Beyond.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="corporate-training.html">Corporate Training &amp; Coaching</a></li>
+          <li><a href="automobile-training.html">Automobile Training</a></li>
+          <li><a href="connect.html">Connect</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="mailto:professional-email@example.com">professional-email@example.com</a></li>
+          <li><a href="tel:+919380214777">+91 93802 14777</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn Profile</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 Deepesh Kumar — The Transformation Coach. All rights reserved.</p>
+  </div>
+</footer>
+
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>
