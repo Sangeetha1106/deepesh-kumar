@@ -42,19 +42,19 @@
 </div></div></section>
 
 <section class="dark"><div class="wrap"><div class="sec-head center"><div class="eyebrow" style="color:var(--gold-2)">What Happens Next</div><h2>A Simple Way to <em>Begin</em></h2></div>
-<div class="steps" style="grid-template-columns:repeat(3,1fr)">
+<div class="steps steps-vertical">
 <div class="step"><h3>Share Your Need</h3><p>Tell me about your goals, audience or challenge using the form or a quick call.</p></div>
 <div class="step"><h3>Let's Discuss</h3><p>We talk through objectives, format and timelines to shape the right programme.</p></div>
 <div class="step"><h3>Plan &amp; Deliver</h3><p>A tailored plan, then engaging delivery with practical takeaways.</p></div></div></div></section>
 
 <section class="light-sec" style="padding-top:70px"><div class="wrap"><div class="contact-grid">
 <div class="contact-form"><div class="eyebrow" style="margin-bottom:12px">Send an Enquiry</div><h2 style="margin-bottom:26px;color:var(--navy)">Start a <em>Conversation</em></h2>
-<form action="mailto:professional-email@example.com" method="post" enctype="text/plain">
-<div class="row"><div class="f"><label for="n">Name</label><input id="n" name="Name" required></div><div class="f"><label for="o">Organisation</label><input id="o" name="Organisation"></div></div>
-<div class="row"><div class="f"><label for="e">Email</label><input id="e" type="email" name="Email" required></div><div class="f"><label for="p">Phone / WhatsApp</label><input id="p" type="tel" name="Phone"></div></div>
+<form class="enquiry-form" id="enquiry-form" action="mailto:professional-email@example.com" method="post" enctype="text/plain" novalidate>
+<div class="row"><div class="f"><label for="n">Name</label><input id="n" name="Name" required aria-describedby="n-error"><div class="field-error" id="n-error" role="alert" aria-live="polite"></div></div><div class="f"><label for="o">Organisation</label><input id="o" name="Organisation"></div></div>
+<div class="row"><div class="f"><label for="e">Email</label><input id="e" type="email" name="Email" required aria-describedby="e-error"><div class="field-error" id="e-error" role="alert" aria-live="polite"></div></div><div class="f"><label for="p">Phone / WhatsApp</label><input id="p" type="tel" name="Phone"></div></div>
 <div class="f"><label for="t">I'm interested in</label><select id="t" name="Interest"><option>Corporate Training</option><option>Coaching &amp; Personal Development</option><option>Automobile Training</option></select></div>
 <div class="f"><label for="m">How can I help you?</label><textarea id="m" name="Message"></textarea></div>
-<button class="btn btn-gold" type="submit">Send Enquiry <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></form></div>
+<button class="btn btn-gold" type="submit" id="submit-enquiry-btn">Send Enquiry <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></form></div>
 <div class="contact-info"><img class="eg" src="assets/eagle.png" alt=""><h3>DEEPESH KUMAR</h3><div class="role">The Transformation Coach · Leadership &amp; Capability Development</div>
 <div class="tag">Transform Within. Rise Beyond.</div>
 <ul><li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:professional-email@example.com">professional-email@example.com</a></li><li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+919380214777">+91 93802 14777</a></li><li><svg class="icon" aria-hidden="true"><use href="#i-in"/></svg><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn profile</a></li></ul>
