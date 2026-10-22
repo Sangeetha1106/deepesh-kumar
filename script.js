@@ -17,25 +17,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.menu');
   const burger = document.querySelector('.burger');
 
-  if (navToggle && menu) {
+  if (navToggle && menu && burger) {
+    const setMenuOpen = (isOpen) => {
+      navToggle.checked = isOpen;
+      burger.classList.toggle('active', isOpen);
+      menu.classList.toggle('active', isOpen);
+      document.body.classList.toggle('menu-open', isOpen);
+    };
+
+    burger.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      setMenuOpen(!navToggle.checked);
+    });
+
     // Close menu when clicking any menu link
     menu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        navToggle.checked = false;
+        setMenuOpen(false);
       });
     });
 
     // Close menu when clicking outside
     document.addEventListener('click', (e) => {
-      if (navToggle.checked && !menu.contains(e.target) && !burger?.contains(e.target)) {
-        navToggle.checked = false;
+      if (navToggle.checked && !menu.contains(e.target) && !burger.contains(e.target)) {
+        setMenuOpen(false);
       }
     });
 
     // Close on Escape key
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && navToggle.checked) {
-        navToggle.checked = false;
+        setMenuOpen(false);
       }
     });
   }
