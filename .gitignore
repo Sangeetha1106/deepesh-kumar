@@ -1,0 +1,8 @@
+# Ignore nested directory
+deepesh-kumar-website/
+
+# OS / Editor files
+.vscode/
+.idea/
+Thumbs.db
+*.log
