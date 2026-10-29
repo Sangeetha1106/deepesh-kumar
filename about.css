@@ -1,0 +1,24 @@
+/* About page hero — built from the client's design so portrait + mountain blend exactly as designed.
+   Desktop (>=1100px) uses viewport-proportional sizes; below that the normal responsive layout applies. */
+@media (min-width:1100px){
+  .hero-about{height:29.45vw;min-height:0;overflow:hidden;background:#fff}
+  .hero-about::before{content:"";position:absolute;right:0;top:0;bottom:0;width:58.4vw;
+    background:url(assets/about_hero.jpg) right top/100% 100% no-repeat;}
+  .ha-right,.ha-photo{display:none}
+  .ha-grid{width:auto;max-width:none;margin:0;padding:2vw 0 0 5.4vw;position:relative;z-index:2}
+  .ha-text{max-width:42vw}
+  .ha-text .eyebrow{font-size:.6vw;gap:.9vw}
+  .ha-text .eyebrow::before{width:2.2vw}
+  .ha-text h1{font-size:3.4vw;line-height:1.02;margin:.7vw 0 .7vw;max-width:42vw;white-space:nowrap}
+  .ha-text p{font-size:.95vw;line-height:1.28;max-width:32.5vw;margin-bottom:.65vw;color:#14213d}
+  .ha-sign{height:3.7vw;margin-top:0}
+  .ha-name{font-size:.6vw;margin-top:.1vw}
+  .ha-name small{font-size:.52vw}
+  .ha-script{left:76.6vw;right:auto;top:3vw;font-size:2.4vw;line-height:1.1;z-index:3}
+  .ha-script::after{width:2.5vw;margin-top:1vw}
+  .ha-stats{left:63vw;right:auto;width:35vw;top:15.3vw;bottom:auto;z-index:3}
+  .ha-stats .icon{font-size:2.1vw}
+  .ha-stats b{font-size:2.15vw;line-height:1.15}
+  .ha-stats strong{font-size:1.28vw;line-height:1.25}
+  .ha-stats small{font-size:.86vw;line-height:1.4}
+}

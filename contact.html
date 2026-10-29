@@ -27,20 +27,20 @@
 
 <div id="enq-success-wrap" class="enq-success" style="display:none;" aria-live="polite">
   <div class="success-icon"><svg class="icon" aria-hidden="true" style="width:1.6em;height:1.6em"><use href="#i-tick"/></svg></div>
-  <h3>Enquiry Received!</h3>
-  <p>Thank you for reaching out, <span id="success-name"></span>. Your message has been received, and Deepesh Kumar will connect with you within 24 hours.</p>
+  <h3>Enquiry Sent!</h3>
+  <p>Thank you for reaching out, <span id="success-name"></span>. Your enquiry is opening in WhatsApp (+91 93802 14777). If WhatsApp didn't open automatically, please click below.</p>
   <div class="enq-summary">
     <div><span>Programme:</span> <strong id="success-prog"></strong></div>
     <div><span>Email:</span> <strong id="success-email"></strong></div>
     <div id="success-phone-row" style="display:none;"><span>Phone:</span> <strong id="success-phone"></strong></div>
   </div>
   <div class="btn-row">
-    <button type="button" class="btn btn-gold" id="btn-another">Send Another Enquiry</button>
-    <a href="#" class="btn btn-dark" id="btn-mailto" target="_blank">Open in Email Client <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <a href="#" class="btn btn-gold" id="btn-whatsapp" target="_blank" rel="noopener">Open in WhatsApp <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <button type="button" class="btn btn-dark" id="btn-another">Send Another Enquiry</button>
   </div>
 </div>
 
-<form id="enquiry-form" class="live" action="mailto:deepeshkumartraining@gmail.com" method="post" enctype="text/plain" autocomplete="on" novalidate>
+<form id="enquiry-form" class="live" data-wa="919380214777" action="https://wa.me/919380214777" method="get" target="_blank" autocomplete="on" novalidate>
 <div class="row">
   <div class="f" id="f-name">
     <label for="n">Name <b>*</b></label>
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var btnText = document.getElementById('btn-text');
   var successWrap = document.getElementById('enq-success-wrap');
   var anotherBtn = document.getElementById('btn-another');
-  var mailtoBtn = document.getElementById('btn-mailto');
+  var waBtn = document.getElementById('btn-whatsapp');
 
   var fName = document.getElementById('f-name');
   var fOrg = document.getElementById('f-org');
@@ -309,7 +309,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     submitBtn.classList.add('is-loading');
     submitBtn.disabled = true;
-    btnText.innerHTML = '<span class="spinner"></span> Sending Enquiry...';
+    btnText.textContent = 'Redirecting to WhatsApp...';
 
     var nameVal = nameInput.value.trim();
     var orgVal = orgInput.value.trim();
@@ -318,16 +318,26 @@ document.addEventListener('DOMContentLoaded', function() {
     var interestVal = interestSelect.value;
     var messageVal = msgInput.value.trim();
 
-    var mailSubject = encodeURIComponent('Enquiry: ' + interestVal + ' — ' + nameVal);
-    var mailBody = encodeURIComponent(
-      'Name: ' + nameVal + '\n' +
-      (orgVal ? 'Organisation: ' + orgVal + '\n' : '') +
-      'Email: ' + emailVal + '\n' +
-      (phoneVal ? 'Phone: ' + phoneVal + '\n' : '') +
-      'Programme of Interest: ' + interestVal + '\n\n' +
-      'Message:\n' + messageVal
-    );
-    var mailtoUrl = 'mailto:deepeshkumartraining@gmail.com?subject=' + mailSubject + '&body=' + mailBody;
+    var waNumber = form.getAttribute('data-wa') || '919380214777';
+    var lines = [
+      'Hello Deepesh, I would like to make an enquiry.',
+      '',
+      'Name: ' + nameVal
+    ];
+    if (orgVal) lines.push('Organisation: ' + orgVal);
+    lines.push('Email: ' + emailVal);
+    if (phoneVal) lines.push('Phone: ' + phoneVal);
+    lines.push('Interested in: ' + interestVal);
+    lines.push('');
+    lines.push('Message: ' + messageVal);
+
+    var waUrl = 'https://wa.me/' + waNumber + '?text=' + encodeURIComponent(lines.join('\n'));
+
+    // Open WhatsApp - opens new tab/app, fallback to current window if popup blocked
+    var waWin = window.open(waUrl, '_blank');
+    if (!waWin || waWin.closed || typeof waWin.closed === 'undefined') {
+      window.location.href = waUrl;
+    }
 
     setTimeout(function() {
       document.getElementById('success-name').textContent = nameVal;
@@ -340,8 +350,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('success-phone-row').style.display = 'none';
       }
 
-      if (mailtoBtn) {
-        mailtoBtn.href = mailtoUrl;
+      if (waBtn) {
+        waBtn.href = waUrl;
       }
 
       form.style.display = 'none';
@@ -351,20 +361,7 @@ document.addEventListener('DOMContentLoaded', function() {
       submitBtn.classList.remove('is-loading');
       submitBtn.disabled = false;
       btnText.textContent = 'Send Enquiry';
-
-      // Launch mailto silently via hidden iframe so client gets prompted without leaving page
-      try {
-        var mailtoIframe = document.createElement('iframe');
-        mailtoIframe.style.display = 'none';
-        mailtoIframe.src = mailtoUrl;
-        document.body.appendChild(mailtoIframe);
-        setTimeout(function() {
-          if (mailtoIframe.parentNode) {
-            document.body.removeChild(mailtoIframe);
-          }
-        }, 2000);
-      } catch (err) {}
-    }, 600);
+    }, 400);
   });
 
   if (anotherBtn) {
